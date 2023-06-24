@@ -1,0 +1,19 @@
+﻿@model Projekt_60134_ST3.Models.AddUserViewModel
+@{
+}
+<h1>Dodaj użytkownika</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Imię</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Adres Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Data urodzin</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <button type="submit" class="btn btn-primary">Wyślij</button>
+</form>
